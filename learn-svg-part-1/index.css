@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.rows {
+  display: flex;
+  flex-direction: row;
+}
+
+.columns {
+  display: flex;
+  flex-direction: column;
+}
+
+.svg-container {
+  width: fit-content;
+  border: 2px solid #ccc;
+  margin: 5px;
+  padding: 5px;
+}
+
+svg {
+  background-size: 10px 10px;
+  background-image: linear-gradient(to right, rgb(223, 223, 223) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(223, 223, 223) 1px, transparent 1px);
+  background-position: 0px 0px;
+}
