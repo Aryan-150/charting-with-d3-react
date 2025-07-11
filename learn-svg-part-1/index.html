@@ -43,16 +43,102 @@
 
     <!-- 2nd column -->
     <div class="columns">
-      <div style="
-        width: 101px;
-        height: 100px;
-        margin: 5px;
-        background-size: 10px 10px;
-        background-image: linear-gradient(to right, rgb(154, 100, 100) 1px, transparent 1px);
-      ">
+      <!-- letter (M) L 80 20 (*(L 60 40)) L 40 20  -->
+      <div class="svg-container">
+        <svg>
+          <path d="M 20 20 L 20 90 L 40 90 L 40 50 L 60 60 L 80 50 L 80 90 L 100 90 L 100 20 L 60 40 Z" fill="red" />
+        </svg>
+      </div>
 
+      <!-- polygon -->
+      <div class="svg-container">
+        <svg>
+          <polygon points="50,50 150,50 100,100 60,100" fill="orange" />
+        </svg>
+      </div>
+
+      <!-- text -->
+      <div class="svg-container">
+        <svg>
+          <text x="50" y="50">GHW</text>
+        </svg>
       </div>
     </div>
+
+    <!-- 3rd column -->
+     <div class="columns">
+      <!-- letter (L) -->
+      <div class="svg-container">
+        <svg>
+          <path d="M 10 20 L 10 100 L 70 100 L 70 80 L 30 80 L 30 20 Z" fill="blue" />
+        </svg>
+      </div>
+     </div>
+
+     <!-- 4th column -->
+     <!-- Todo: letter (H): Assignment -->
+     <div class="columns">
+      <div class="svg-container">
+        <svg>
+          <path d="M 10 20 Z" fill="yellow" />
+        </svg>
+      </div>
+
+      <!-- grouped elements -->
+      <div class="svg-container">
+        <svg>
+          <g transform="translate(150, 25) rotate(45)">
+            <rect x="0" y="0" height="60" width="60" fill="#bccf0a" />
+            <circle cx="30" cy="30" r="15" fill="#f5f650" />
+            <rect x="25" y="25" height="35" width="35" fill="#cf520a" />
+          </g>
+        </svg>
+      </div>
+
+      <!-- animate -->
+       <!-- attributeName ( "rx", "ry", "x", "y", "fill" ) -->
+       <div class="svg-container">
+        <svg>
+          <rect x="0" y="0" height="50" width="50" fill="#f5f650">
+            <animate
+              attributeName="rx"
+              values="0;5;10;5;0"
+              dur="5s"
+              repeatCount="indefinite"
+            />
+            <animate
+              attributeName="x"
+              values="0;50;100;50;0"
+              dur="5s"
+              repeatCount="indefinite"
+            />
+
+            <animate
+              attributeName="y"
+              values="0;50;100;50;0"
+              dur="5s"
+              repeatCount="indefinite"
+            />
+
+            <animate 
+              attributeName="fill"
+              values="yellow;orange;red;orange;yellow"
+              dur="10s"
+              repeatCount="indefinite"
+            />
+          </rect>
+        </svg>
+       </div>
+
+       <!-- animateMotion ( path + shape with animateMotion ) -->
+       <div class="svg-container">
+        <svg>
+
+        </svg>
+       </div>
+
+     </div>
+
   </div>
 </body>
 
